@@ -18,7 +18,7 @@ library = load_library(file_path)
 
 library.each do |key, hash|
   binding.pry 
-  hash[japanese]
+  hash[:japanese]
 end
 if library["meaning"].include?(japanese_emoticon)
   result = library["meaning"]
